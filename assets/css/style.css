@@ -893,7 +893,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #1acc8d;
+  background: #1356a5;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -909,7 +909,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #010483;
+  color: #272626;
 }
 
 .counts .count-box p {
@@ -928,7 +928,7 @@ section {
 
 .details .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 50px;
   color: #010483;
 }
 
@@ -942,14 +942,16 @@ section {
 }
 
 .details .content ul i {
-  font-size: 20px;
+  font-size: 40px;
   padding-right: 4px;
   color: #1acc8d;
 }
 
 .details .content p:last-child {
+  font-size: 30px;
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Gallery
