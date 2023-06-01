@@ -1,0 +1,7 @@
+[
+    {   "id"          :  1,
+        "pkg_name"    : "Better Package",
+        "price"       :  2100 ,
+        "description" :  "3 Ballons"
+    }
+]
