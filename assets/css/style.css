@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #1acc8d;
+  color: #010483;
   text-decoration: none;
 }
 
 a:hover {
-  color: #34e5a6;
+  color: #010483;
   text-decoration: none;
 }
 
@@ -1310,7 +1310,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #34e5a6;
+  color: #c33f3f;
 }
 
 .faq .faq-list .icon-show,
@@ -1335,7 +1335,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1acc8d;
+  color: #000a72;
 }
 
 .faq .faq-list a.collapsed .icon-show {
