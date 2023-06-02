@@ -35,6 +35,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .modal-backdrop{
+      z-index: 100 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -243,13 +248,14 @@
           <h2>Starting Points</h2>
           <p>Surprise Delivery Checkpoints</p>
         </div>
-
         <div class="row" data-aos="fade-left">
           <div class="col-auto col-md-3 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+            <div style="cursor: pointer;" class="icon-box" data-aos="zoom-in" data-aos-delay="50" data-bs-toggle="modal" data-bs-target="#modalRegular">
               <i class="bi bi-geo-alt-fill" style="color: #ffbb2c;"></i>
-              <h3><a href="">Cavite</a></h3>
+              <h3><a>Cavite</a></h3>
             </div>
+            <!--Modal:Name-->
+          
           </div>
           <div class="col-auto col-md-3 mt-4  ">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
@@ -1251,6 +1257,27 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <div class="modal fade" id="modalRegular"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Body-->
+        <div class="modal-body mb-0 p-0" style="height: 400px;">
+          <!--Google Map-->
+          <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.1789121474385!2d120.95385337426266!3d14.301035186150614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d596fca738d1%3A0xcb327ef9afb22aca!2sSM%20City%20Dasmari%C3%B1as!5e0!3m2!1sen!2sph!4v1685676507562!5m2!1sen!2sph" 
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-outline-danger btn-md" data-bs-dismiss="modal"> Close </button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
