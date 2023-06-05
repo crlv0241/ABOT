@@ -39,7 +39,7 @@ h6 {
 .map-container-9{
   overflow: hidden;
   position: relative;
-  height: 0;
+  height:0;
 }
 .map-container-9 iframe{
   left:0;
