@@ -41,7 +41,7 @@
         "description" :  "Goldilocks Classic Sansrival Cake, 3 Boxes Shakey's Pizza, 1 Dozen Dunkin Donuts, 5 pcs Balloons",
         "img_path"    :  "/img/pkg/Classic_Sans.jpg"
     },
-    
+
     {
         "id"          :  7,
         "pkg_name"    : "Dessert Package",
@@ -188,6 +188,33 @@
         "price"       :  "2,700" ,
         "description" :  "5 pcs Balloons, Classic Ube Caramia Cake, Bouquet of Mixed Flowers",
         "img_path"    :  "/img/pkg/ubebe_love.jpg"
+    },
+    {
+        "id"          :  28,
+        "pkg_name"    : "Car Setup For Her",
+        "price"       :  "6,500" ,
+        "description" :  "Balloons, Mix Flowers, Mango Bravo Mini Contis Cake, 2 Large Shakey's Pizza( Hawaiian & Pepperoni), Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
+        "img_path"    : "/img/pkg/car_setup_for_her.jpg"
+    },
+    {
+        "id"          :  29,
+        "pkg_name"    : "Car Setup For Him",
+        "price"       :  "7,500" ,
+        "description" :  "Balloons, 1 Dozen Krispy Kreme, Big Mango Bravo Contis Cake, 8pcs Chicken Joy, 2 Pan Spaghettie, Happy Birthday Banner, 5pcs 3R Printer pictures for FREE"
+    },
+    {
+        "id"          :  30,
+        "pkg_name"    : "Car Setup For Kids",
+        "price"       :  "7,000" ,
+        "description" :  "Balloons, Mini Mango Bravo Contis Cake,1 Dozen Krispy Kreme, 8pcs Chicken Joy Jollibee, Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
+        "img_path"    :"/img/pkg/car_set-up_for_kids.jpg"
+    },
+    {
+        "id"          :  31,
+        "pkg_name"    : "Car Setup Just For Her",
+        "price"       :  "7,500" ,
+        "description" :  "Balloons, 6 Roses Flowers, Goldilocks Pastel Cake, 3pcs Greenwich Pizza, 8pcs Chicken Joy Jollibee,12 Dunkin Donuts, Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
+        "img_path"    : "/img/pkg/car_set-up_just_for_her.jpg"
     }
 ]
 
