@@ -36,6 +36,29 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
+  <style>
+    .stroke {
+        font-size: 3.2rem;
+        -webkit-text-stroke-width: 1.4px;
+        -webkit-text-stroke-color: #B80000;
+        -webkit-text-fill-color: #f5ed0e;
+        letter-spacing: 3px;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+    .stroke1 {
+        font-size: 3.2rem;
+        -webkit-text-fill-color: #34358c;
+        letter-spacing: 3px;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+
+    .stroke3{
+        font-size: 1.2rem;
+        -webkit-text-fill-color: #2e2e2f;
+        letter-spacing: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -85,10 +108,14 @@
 
       <section class="container">
             <br><br>
-            <h1 style="padding-top: 30px;">ABOT SURPRISE DELIVERY</h1>
-            <br><br>
-            <!-- <h1>Surprise Delivery Packages</h1> -->
-            <div class="card-wrapper row" id="card_wrapper" style="justify-content: space-around;">
+            <br>
+
+            <div class="row" id="package_card">
+               
+            </div>
+
+
+            <div class="card-wrapper row mt-4" id="card_wrapper" style="justify-content: space-around;">
                 <!-- <a href="package.html?id=1">
                     <div class="col-lg-3 col-md-4 col-6 mb-4">
                         <div class="card " >
@@ -141,31 +168,67 @@
         </section>
     </main>
 
+   
     <script>
+        const url = new URL(window.location.href)
+        const urlParam = url.searchParams.get(  'id'  );
+        const pkg_card = document.getElementById( 'package_card' )
+
         let abot_packages = null;
         const div_pkg_wrapper = document.getElementById("card_wrapper")
         fetch('./packages.json')
             .then((response) => response.json())
             .then((json) =>  {
                 abot_packages = json
+                console.log(abot_packages)
+
+               
+
                 for(let i = 0; i < abot_packages.length; ++i){
-                    console.log( abot_packages[i] ); 
-                    div_pkg_wrapper.innerHTML += `
-                        <a class="col-lg-3 col-md-4 col-6 mb-4" href="package.html?id=${abot_packages[i]['id']}">
-                            <div >
-                                <div class="card " >
-                                    <img src=".${abot_packages[i]['img_path']}" class="card-img-top" alt="...">
-                                    <div class="card-body bg-primary">
-                                        <h5 class="card-title text-center text-light" style="font-weight: 900;">${abot_packages[i]['pkg_name']}</h5>
-                                    </div>
+                    if( abot_packages[i]['id'] == urlParam)
+                    {
+                        pkg_card.innerHTML = `
+                        <div class="card col-lg-5 bg-danger mb-4" data-aos="fade-up" data-aos-delay="25">
+                            <div class="">
+                                <img src=".${abot_packages[i]['img_path']}" class="col-12" alt="..." >
+                            </div>
+                        </div>
+                        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="25">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="stroke1">${abot_packages[i]['pkg_name']}</h1>
                                 </div>
-                            </div>    
-                        </a>
+                                <div class="card-footer">
+                                    <h1 class="stroke">P ${abot_packages[i]['price']}</h1>
+                                </div>
+                                <div class="card-body stroke3">
+                                    ${abot_packages[i]['description']}
+                                </div>
+                            </div>
+                        
+                        </div>
                     `
+                    }
+                    else
+                    {
+                        div_pkg_wrapper.innerHTML += `
+                            <a class="col-lg-3 col-md-4 col-6 mb-4" href="package.html?id=${abot_packages[i]['id']}">
+                                <div >
+                                    <div class="card " >
+                                        <img src=".${abot_packages[i]['img_path']}" class="card-img-top" alt="...">
+                                        <div class="card-body bg-primary">
+                                            <h5 class="card-title text-center text-light" style="font-weight: 900;">${abot_packages[i]['pkg_name']}</h5>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </a>
+                        `
+                    }
                 }
             });
+
     </script>
-    
+
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
@@ -259,3 +322,4 @@
 </body>
 
 </html>
+

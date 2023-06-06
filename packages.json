@@ -2,167 +2,192 @@
     {
         "id"          :  1,
         "pkg_name"    : "Awesome Package",
-        "price"       :  5500 ,
-        "description" :  "1 Dozen Roses, 5 pcs Balloons, 2 Family Pan Spaghetti, 2 Boxes Large Shakeys Pizza,Big Mango Bravo Contis Cake"
+        "price"       :  "5,500" ,
+        "description" :  "1 Dozen Roses, 5 pcs Balloons, 2 Family Pan Spaghetti, 2 Boxes Large Shakeys Pizza,Big Mango Bravo Contis Cake",
+        "img_path"    :  "/img/pkg/awesome_package.jpg"
     },
     {
         "id"          :  2,
         "pkg_name"    : "Better Package",
-        "price"       :  2500 ,
-        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, Mini Mango Bravo Contis Cake"
+        "price"       :  "2,500" ,
+        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, Mini Mango Bravo Contis Cake",
+        "img_path"    :  "/img/pkg/better_package.jpg"
     },
     {
         "id"          :  3,
         "pkg_name"    : "Best Package",
-        "price"       :  3500 ,
-        "description" :  "5 pcs Balloons, 1 Dozens Roses, Regular Chocolate Obsession Contis Cake"
+        "price"       :  "3,500" ,
+        "description" :  "5 pcs Balloons, 1 Dozens Roses, Regular Chocolate Obsession Contis Cake",
+        "img_path"    :  "/img/pkg/best_package.jpg"
     },
     {
         "id"          :  4,
         "pkg_name"    : "Birthday Feast and Anniversary Feast",
-        "price"       :  6300 ,
-        "description" :  "Shakey's 2 Large Pizza, 2 Dozens Krispy Kreme, Big Mango Bravo Contis Cake, 2 Family Pan Jollibee Spaghetti, 5 pcs Balloons, 1 Bucket (8pcs) Jollibee Crispy Chicken Joy  "
+        "price"       :  "6,300" ,
+        "description" :  "Shakey's 2 Large Pizza, 2 Dozens Krispy Kreme, Big Mango Bravo Contis Cake, 2 Family Pan Jollibee Spaghetti, 5 pcs Balloons, 1 Bucket (8pcs) Jollibee Crispy Chicken Joy  ",
+        "img_path"    :  "/img/pkg/Birthday_Feast_and_Anniversary_Feast.jpg"
     },
     {
         "id"          :  5,
         "pkg_name"    : "Budget Package",
-        "price"       :  1900 ,
-        "description" :  "5 pcs Balloons, Mini Moist Contis Cake, 1 Bouquet (8pcs) Jollibee Crispy Chicken Joy"
+        "price"       :  "1,900" ,
+        "description" :  "5 pcs Balloons, Mini Moist Contis Cake, 1 Bouquet (8pcs) Jollibee Crispy Chicken Joy",
+        "img_path"    :  "/img/pkg/budget_package.jpg"
     },
     {
         "id"          :  6,
         "pkg_name"    : "Classic Sans",
-        "price"       :  3300 ,
-        "description" :  "Goldilocks Classic Sansrival Cake, 3 Boxes Shakey's Pizza, 1 Dozen Dunkin Donuts, 5 pcs Balloons"
+        "price"       :  "3,300" ,
+        "description" :  "Goldilocks Classic Sansrival Cake, 3 Boxes Shakey's Pizza, 1 Dozen Dunkin Donuts, 5 pcs Balloons",
+        "img_path"    :  "/img/pkg/Classic_Sans.jpg"
     },
-
+    
     {
         "id"          :  7,
         "pkg_name"    : "Dessert Package",
-        "price"       :  3500 ,
-        "description" :  "5 pcs Balloons, Small Teady Bear, Goldilocks Round Cake, 1 Dozen Dunkin' Donuts, 24 pcs Ferrero Rocher Chocolates"
+        "price"       :  "3,500" ,
+        "description" :  "5 pcs Balloons, Small Teady Bear, Goldilocks Round Cake, 1 Dozen Dunkin' Donuts, 24 pcs Ferrero Rocher Chocolates",
+        "img_path"    :  "/img/pkg/Dessert_Package.jpg"
     },
     {
         "id"          :  8,
         "pkg_name"    : " Dream Love",
-        "price"       :  3100 ,
-        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, 2 Boxes Large Shakey's Pizza, Midnight Dream Caramia Cake"
+        "price"       :  "3,100" ,
+        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, 2 Boxes Large Shakey's Pizza, Midnight Dream Caramia Cake",
+        "img_path"    :  "/img/pkg/dream_love.jpg"
     },
     {
         "id"          :  9,
         "pkg_name"    : "Fairy Party",
-        "price"       :  4300 ,
-        "description" :  "6 pcs Roses,5 pcs Balloons, 3 Boxes Greenwich, 1 Dozen Dunkin Donut, Goldilocks Pastel Strawberry Cake 8x12, 1 Bouquet Jollibee Crispy Chicken Joy (8pcs) "
+        "price"       :  "4,300" ,
+        "description" :  "6 pcs Roses,5 pcs Balloons, 3 Boxes Greenwich, 1 Dozen Dunkin Donut, Goldilocks Pastel Strawberry Cake 8x12, 1 Bouquet Jollibee Crispy Chicken Joy (8pcs) ",
+        "img_path"    :  "/img/pkg/fairy_party.jpg"
     },
     {
         "id"          :  10,
         "pkg_name"    : "Forest Bear",
-        "price"       :  3300 ,
-        "description" :  "5 pcs Balloons, Small Teady Bear, Red Ribbon Black Forest, 1 Bouquet of Mixed Flowers "
+        "price"       :  "3,300" ,
+        "description" :  "5 pcs Balloons, Small Teady Bear, Red Ribbon Black Forest, 1 Bouquet of Mixed Flowers ",
+        "img_path"    :  "/img/pkg/Forest_Bear.jpg"
     },
     {
         "id"          :  11,
         "pkg_name"    : "Great Package",
-        "price"       :  2100 ,
-        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Mini Choco Moist Contis Cake"
+        "price"       :  "2,100" ,
+        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Mini Choco Moist Contis Cake",
+        "img_path"    :  "/img/pkg/great_package.jpg"
     },
     {
         "id"          :  12,
         "pkg_name"    : "Good Looking",
-        "price"       :  2500 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Contis Blueberry Cheesecake"
+        "price"       :  "2,500" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Contis Blueberry Cheesecake",
+        "img_path"    :  "/img/pkg/good_looking.jpg"
     },
     {
         "id"          :  13,
         "pkg_name"    : "Goldi Mocha with Flowers",
-        "price"       :  2300 ,
-        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, Goldilocks Dedication Mocha Cake (8x12)"
+        "price"       :  "2,300" ,
+        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, Goldilocks Dedication Mocha Cake (8x12)",
+        "img_path"    :  "/img/pkg/goldi_mocha_with_flowers_package.jpg"
     },
     {
         "id"          :  14,
         "pkg_name"    : "Goldi Mocha with Pizza Package",
-        "price"       :  2300 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Goldilocks Dedication Mocha Cake (8x12)"
+        "price"       :  "2,300" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Goldilocks Dedication Mocha Cake (8x12)",
+        "img_path"    :  "/img/pkg/Goldi_Mocha_with_Pizza.jpg"
     },
     {
         "id"          :  15,
         "pkg_name"    : "Goldi Choco with Pizza",
-        "price"       :  2300 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Goldilocks Dedication Chocolate Cake (8x12)"
+        "price"       :  "2,300" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Goldilocks Dedication Chocolate Cake (8x12)",
+        "img_path"    :  "/img/pkg/Goldi_Choco_with_Pizza.jpg"
     },
     {
         "id"          :  16,
         "pkg_name"    : "Goody Treats",
-        "price"       :  2700 ,
-        "description" :  "5 pcs Balloons, 1 Dozen Dunkin Donuts, Goldilocks Dedication Chocolate Cake, 1 Bucket (8pcs) Jollibee Crispy Chicken Joy "
+        "price"       :  "2,700" ,
+        "description" :  "5 pcs Balloons, 1 Dozen Dunkin Donuts, Goldilocks Dedication Chocolate Cake, 1 Bucket (8pcs) Jollibee Crispy Chicken Joy ",
+        "img_path"    :  "/img/pkg/goody_treats.jpg"
     },
     {
         "id"          :  17,
         "pkg_name"    : "Honey Bunch",
-        "price"       :  2500 ,
-        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Coffee Honey Caramia Cake  "
+        "price"       :  "2,500" ,
+        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Coffee Honey Caramia Cake  ",
+        "img_path"    :  "/img/pkg/honey_bunch.jpg"
     },
     {
         "id"          :  18,
         "pkg_name"    : "Kiddie Bundle",
-        "price"       :  3100 ,
-        "description" :  "5 pcs Balloons, 1 Dozen Krispy Kreme (mix), Mini Mango Bravo Contis Cake,1 Bucket (8pcs) Jollibee Crispy Chicken Joy "
+        "price"       :  "3,100" ,
+        "description" :  "5 pcs Balloons, 1 Dozen Krispy Kreme (mix), Mini Mango Bravo Contis Cake,1 Bucket (8pcs) Jollibee Crispy Chicken Joy ",
+        "img_path"    :  "/img/pkg/kiddie_bundle.jpg"
     },
     {
         "id"          :  19,
-        "pkg_name"    : "LDR Packages",
-        "price"       :  2800 ,
-        "description" :  "1 4 3 Balloons, Medium Teddy Bear, Red Ribbon Black Forest Cake "
+        "pkg_name"    : "LDR Package",
+        "price"       :  "2,800" ,
+        "description" :  "1 4 3 Balloons, Medium Teddy Bear, Red Ribbon Black Forest Cake ",
+        "img_path"    :  "/img/pkg/ldr_Package.jpg"
     },
     {
         "id"          :  20,
         "pkg_name"    : "Mango Sunrise",
-        "price"       :  2900 ,
-        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Red Ribbon Sunrise Cake"
+        "price"       :  "2,900" ,
+        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Red Ribbon Sunrise Cake",
+        "img_path"    :  "/img/pkg/mango_sunrise.jpg"
     },
     {
         "id"          :  21,
         "pkg_name"    : "Mango Tango",
-        "price"       :  2500 ,
-        "description" :  "5 pcs Balloons, Mango Cheesecake, 2 Boxes Large Shakey's Pizza"
+        "price"       :  "2,500" ,
+        "description" :  "5 pcs Balloons, Mango Cheesecake, 2 Boxes Large Shakey's Pizza",
+        "img_path"    :  "/img/pkg/mango_tango.jpg"
     },
     {
         "id"          :  22,
         "pkg_name"    : "Nice Looking",
-        "price"       :  2500 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Almond Choco Sansrival Contis Cake"
+        "price"       :  "2,500" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Almond Choco Sansrival Contis Cake",
+        "img_path"    :  "/img/pkg/nice_looking.jpg"
     },
     {
         "id"          :  23,
         "pkg_name"    : "Red Ribbon Choco with Pizza Package",
-        "price"       :  2300 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Red Ribbon Dedication Chocolate Cake 8x10"
+        "price"       :  "2,300" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Red Ribbon Dedication Chocolate Cake 8x10",
+        "img_path"    :  "/img/pkg/Red_Ribbon_Choco_with_Pizza_Package.jpg"
     },
     {
         "id"          :  24,
         "pkg_name"    : "Red Ribbon Mocha with Pizza Package",
-        "price"       :  2300 ,
-        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Red Ribbon Dedication Mocha Cake"
+        "price"       :  "2,300" ,
+        "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Red Ribbon Dedication Mocha Cake",
+        "img_path"    :  "/img/pkg/Red_Ribbon_mocha_with_Pizza_Package.jpg"
     },
     {
         "id"          :  25,
         "pkg_name"    : "Treat To Go",
-        "price"       :  3100 ,
-        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, 8pcs Ferrero ROcher Chocolates, Goldilocks Royal Fudge with Toblerone"
+        "price"       :  "3,100" ,
+        "description" :  "5 pcs Balloons, Bouquet of Mixed Flowers, 8pcs Ferrero ROcher Chocolates, Goldilocks Royal Fudge with Toblerone",
+        "img_path"    :  "/img/pkg/treats_to_go.jpg"
     },
     {
         "id"          :  26,
         "pkg_name"    : "Top Seller",
-        "price"       :  3300 ,
-        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Mini Mango Bravo, 2 Boxes Large Shakey's Pizza"
+        "price"       :  "3,300" ,
+        "description" :  "5 pcs Balloons, 1 Bouquet of Mixed Flowers, Mini Mango Bravo, 2 Boxes Large Shakey's Pizza",
+        "img_path"    :  "/img/pkg/top_seller.jpg"
     },
     {
         "id"          :  27,
         "pkg_name"    : "Ubebe Love",
-        "price"       :  2700 ,
-        "description" :  "5 pcs Balloons, Classic Ube Caramia Cake, Bouquet of Mixed Flowers"
+        "price"       :  "2,700" ,
+        "description" :  "5 pcs Balloons, Classic Ube Caramia Cake, Bouquet of Mixed Flowers",
+        "img_path"    :  "/img/pkg/ubebe_love.jpg"
     }
-
-
 ]
 
