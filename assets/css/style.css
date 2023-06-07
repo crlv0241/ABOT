@@ -36,17 +36,17 @@ h6 {
 /*--------------------------------------------------------------
 # Modal
 --------------------------------------------------------------*/
-.map-container-9{
+.map-container-9 {
   overflow: hidden;
   position: relative;
-  height:0;
+  height: 0;
 }
-.map-container-9 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.map-container-9 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -143,7 +143,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(45,44,89, 0.9);
+  background: rgba(45, 44, 89, 0.9);
   height: 60px;
 }
 
@@ -210,21 +210,21 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+.navbar > ul > li > a:before {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #36e5f9 ;
+  background-color: #36e5f9;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -233,7 +233,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -271,11 +271,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #1acc8d;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -287,7 +287,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -299,7 +299,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -358,7 +358,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile>ul>li>a:before {
+.navbar-mobile > ul > li > a:before {
   left: 20px;
 }
 
@@ -371,7 +371,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #3f43fd;
 }
 
@@ -410,15 +410,15 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a,
+.navbar-mobile .dropdown ul li:hover > a,
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
-.navbar-mobile .dropdown .dropdown ul li:hover>a {
+.navbar-mobile .dropdown .dropdown ul li:hover > a {
   color: #1acc8d;
 }
 
-.navbar-mobile .dropdown>.dropdown-active,
-.navbar-mobile .dropdown .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active,
+.navbar-mobile .dropdown .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -434,7 +434,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(50,106,152, 0.91);
+  background: rgba(50, 106, 152, 0.91);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -628,7 +628,7 @@ section {
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -672,11 +672,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -937,7 +937,7 @@ section {
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
-.details .content+.content {
+.details .content + .content {
   margin-top: 100px;
 }
 
@@ -966,7 +966,6 @@ section {
   font-size: 30px;
   margin-bottom: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Gallery
@@ -1297,7 +1296,7 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
   margin-top: 15px;
 }
 
@@ -1405,13 +1404,15 @@ section {
 }
 
 .contact .info .email,
-.contact .info .phone {
+.contact .info .phone,
+.contact .info .whatsapp {
   margin-top: 40px;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .phone:hover i,
+.contact .info .whatsapp:hover i {
   background: #1acc8d;
   color: #fff;
 }
@@ -1434,7 +1435,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1481,7 +1482,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #1acc8d;
   border: 0;
   padding: 10px 30px;
@@ -1490,7 +1491,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #1041e2;
 }
 
@@ -1616,13 +1617,13 @@ section {
   border-radius: 50px;
 }
 
-#footer .footer-top .footer-newsletter form input[type=email] {
+#footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit] {
+#footer .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -1637,7 +1638,7 @@ section {
   border-radius: 50px;
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #149f6e;
 }
 
