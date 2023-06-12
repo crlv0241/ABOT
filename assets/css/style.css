@@ -1182,7 +1182,6 @@ section {
   padding: 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1194,8 +1193,8 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
+  color: #fff;
+  background: rgba(45,44,89, 0.9);
 }
 
 .pricing h4 {
@@ -1250,7 +1249,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #1acc8d;
+  background: #FFD700;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 50px;
@@ -1269,7 +1268,7 @@ section {
 
 .pricing .featured h3 {
   color: #fff;
-  background: #1acc8d;
+  background: rgba(45,44,89, 0.9);
 }
 
 .pricing .advanced {
@@ -1281,7 +1280,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #1acc8d;
+  background: #b13d3d;
   color: #fff;
 }
 
