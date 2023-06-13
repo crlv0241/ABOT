@@ -15,13 +15,54 @@ body {
 }
 
 a {
-  color: #010483;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
   color: #010483;
   text-decoration: none;
+}
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #36e5f9;
+  border: 2px solid #36e5f9;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #36e5f9;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px #36e5f9;
+}
+
+.button:active {
+  scale: 1;
 }
 
 h1,
@@ -1181,7 +1222,6 @@ section {
   padding: 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1193,8 +1233,8 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
+  color: #fff;
+  background: rgba(45,44,89, 0.9);
 }
 
 .pricing h4 {
@@ -1244,31 +1284,31 @@ section {
 .pricing .btn-wrap {
   margin: 20px -20px -20px -20px;
   padding: 20px 15px;
-  background: #f8f8f8;
+  background: rgba(45,44,89, 0.9);
   text-align: center;
 }
 
 .pricing .btn-buy {
-  background: #1acc8d;
+  background: #FFD700;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 50px;
-  color: #fff;
+  color: #1b1919;
   transition: none;
   font-size: 14px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   transition: 0.3s;
 }
 
 .pricing .btn-buy:hover {
-  background: #149f6e;
+  background: #36e5f9;
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #1acc8d;
+  background: rgba(45,44,89, 0.9);
 }
 
 .pricing .advanced {
@@ -1280,7 +1320,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #1acc8d;
+  background: #b13d3d;
   color: #fff;
 }
 
@@ -1660,3 +1700,65 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+  
+  
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+
