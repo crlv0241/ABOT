@@ -1151,15 +1151,15 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1"> Is this Legit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; Is this legit? </button>
+              <div class="panel">
                 <p>
                   Legitimacy!<nav>We are registered as CORPORATION</nav>We build our company right<nav>
                    We will help you to build your own business</nav>ABOT PILIPINAS CORPORATION is morethan a DELIVERY SERVICE COMPANY.</nav>
                 
                 
-                   <h5 style="text-align: center;" class="mt-4">ABOT PILIPINAS DELIVERY CORPORATION</h5> <h6 style="text-align: center;">Corporation Name</h6>
-                    <h5 style="text-align: center;" class="mt-4"> 2022060054808-12</h5>  <h6 style="text-align: center;">SEC Registration No.</h6>
+                   <h5 style="text-align: center; font-weight: bolder;" class="mt-4">ABOT PILIPINAS DELIVERY CORPORATION</h5> <h6 style="text-align: center;">Corporation Name</h6>
+                    <h5 style="text-align: center; font-weight: bolder;" class="mt-4"> 2022060054808-12</h5>  <h6 style="text-align: center;">SEC Registration No.</h6>
                   
                   
 
@@ -1168,8 +1168,8 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Location of Company? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; Location of Company </button>
+              <div class="panel">
                 <p>
                   BLK 11 LOT 1 2ND FLOOR UNIT 1 GMA Macario Dacon, GEN. MARIANO ALVAREZ, CAVITE, REGION IV-A (CALABARZON), 4117
                 </p>
@@ -1177,8 +1177,8 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Price of Package? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; Price of Package </button>
+              <div class="panel">
                 <p>
                   It is dependent on the package for the relevant occasion.
                 </p>
@@ -1186,8 +1186,8 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How to Pay? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; How to Pay? </button>
+              <div class="panel">
                 <p>
                   Payment Method: GCash,BDO,BPI, Remittance 
                 </p>
@@ -1195,16 +1195,16 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is Cuztomization available? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; Is customization available? </button>
+              <div class="panel">
                 <p>
                   No, We just have the Fix Package only.
                 </p>
               </div>
 
-            <li data-oas="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Can you make a money bouquet? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+            <li data-oas="fade-up" data-aos-delay="450">
+              <button class="accordion"> <i class="bx bx-help-circle icon-help"></i>  &nbsp;&nbsp; Can you make a money bouquet? </button>
+              <div class="panel">
                 <p>
                   We did not provide a money bouquet or a money cake. Our company appreciates giving flowers and food to show genuine love. Don't worry, we have pa-ABOT pera, which will be given to the client during the surprise in the envelope.
                 </p>
@@ -1216,6 +1216,23 @@
 
       </div>
     </section><!-- End F.A.Q Section -->
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
