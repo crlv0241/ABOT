@@ -151,9 +151,9 @@
                 for(let i = 0; i < abot_packages.length; ++i){
                     console.log( abot_packages[i] ); 
                     div_pkg_wrapper.innerHTML += `
-                        <a class="col-lg-3 col-md-4 col-6 mb-4" href="package.html?id=${abot_packages[i]['id']}">
+                        <a class="col-lg-3 col-md-4 col-6 mb-4 scale1 " href="package.html?id=${abot_packages[i]['id']}">
                             <div >
-                                <div class="card " >
+                                <div class="card shadow" >
                                     <img src=".${abot_packages[i]['img_path']}" class="card-img-top" alt="...">
                                     <div class="card-body bg-primary">
                                         <h5 class="card-title text-center text-light" style="font-weight: 900;">${abot_packages[i]['pkg_name']}</h5>
