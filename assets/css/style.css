@@ -108,7 +108,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1acc8d;
+  border: 6px solid #2e6ae8;
   border-top-color: #d2f9eb;
   border-radius: 50%;
   width: 60px;
@@ -135,7 +135,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1acc8d;
+  background: #2e6ae8;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -149,7 +149,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2be4a2;
+  background: #e42b2b;
   color: #fff;
 }
 
@@ -750,7 +750,6 @@ section {
   color: #010483;
   margin-bottom: 15px;
   transition: all ease-in-out .5s;
-  background-image: url("../../img/system/flag.jpg");
   background-position: bottom;
 }
 
@@ -953,7 +952,6 @@ section {
   transition: all ease-in-out .2s;
   overflow: hidden;
   box-sizing: border-box;
-  min-width: 1px;
   padding: 0 !important;
 }
 
@@ -1394,22 +1392,22 @@ section {
   transition: 0.4s;
   position: block;
 }
-
+/* 
 .active, .accordion:hover {
   background-color: #ccc;
-}
+} */
 
 .accordion:after {
-  content: '\002B';
+  /* content: '\002B'; */
   color: #777;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-.active:after {
-  content: "\2212";
-}
+/* .active:after {
+  /* content: "\2212"; 
+} */
 
 .panel {
   padding: 0 18px;
@@ -1809,8 +1807,8 @@ section {
   display: block;
   border-radius: 50px;
   background: #0d6ef0;
-  width: 45px;
-  height: 45px;
+  width: 100%;
+  height: 50px;
   transition: all 0.3s ease;
 }
 
@@ -1820,17 +1818,18 @@ section {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #234567;
+  color: white;
 }
 
 .cta svg {
   position: relative;
   top: 0;
   margin-left: 10px;
+  margin-bottom: 4px;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #234567;
+  stroke: white;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -1838,7 +1837,7 @@ section {
 
 .cta:hover:before {
   width: 100%;
-  background: #b1dae7;
+  background: #ff2104;
 }
 
 .cta:hover svg {
