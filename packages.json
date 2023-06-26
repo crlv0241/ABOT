@@ -293,7 +293,7 @@
         "pkg_name"    : "Car Setup Just For Her",
         "price"       :  "7,500" ,
         "description" :  "Balloons, 6 Roses Flowers, Goldilocks Pastel Cake, 3pcs Greenwich Pizza, 8pcs Chicken Joy Jollibee,12 Dunkin Donuts, Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
-        "img_path"    : "/img/pkg/CarSetUpJustForher.jpg",
+        "img_path"    : "/img/pkg/CarSetUpJustForHer.jpg",
         "img_car"     : "/img/pkg/carsetupjustforher2.jpg",
         "delivery"    : "car_setup"
     },
