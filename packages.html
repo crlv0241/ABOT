@@ -51,29 +51,28 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+            <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#features">Features</a></li>
+            <li><a class="nav-link scrollto" href="index.html#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="index.html#pricing">Packages</a></li>
+            <li class="dropdown"><a href="#"><span>Surprise Delivery</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <!-- <li><a href="#">Surprise Delivery</a></li> -->
+                <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Motorcycle</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="packages.html?id=motorcycle">Motorcycle</a></li>
+                <li><a href="packages.html?id=car_setup">Car Setup</a></li>
+              </ul>           
+            </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -143,6 +142,9 @@
 
     <script>
         let abot_packages = null;
+        const url = new URL(window.location.href)
+        const urlParam = url.searchParams.get(  'id'  ) ?? "All";
+
         const div_pkg_wrapper = document.getElementById("card_wrapper")
         fetch('./packages.json')
             .then((response) => response.json())
@@ -150,7 +152,11 @@
                 abot_packages = json
                 for(let i = 0; i < abot_packages.length; ++i){
                     console.log( abot_packages[i] ); 
-                    div_pkg_wrapper.innerHTML += `
+
+                    if(urlParam != "All" && abot_packages[i]['delivery'] === urlParam) 
+                    {
+
+                        div_pkg_wrapper.innerHTML += `
                         <a class="col-lg-3 col-md-4 col-6 mb-4 scale1 " href="package.html?id=${abot_packages[i]['id']}">
                             <div >
                                 <div class="card shadow" >
@@ -161,7 +167,23 @@
                                 </div>
                             </div>    
                         </a>
-                    `
+                                    `
+                    }
+                    else if (urlParam === "All" || (urlParam != "motorcycle" && urlParam != "car_setup") ) 
+                    {
+                        div_pkg_wrapper.innerHTML += `
+                        <a class="col-lg-3 col-md-4 col-6 mb-4 scale1 " href="package.html?id=${abot_packages[i]['id']}">
+                            <div >
+                                <div class="card shadow" >
+                                    <img src=".${abot_packages[i]['img_path']}" class="card-img-top" alt="...">
+                                    <div class="card-body bg-primary">
+                                        <h5 class="card-title text-center text-light" style="font-weight: 900;">${abot_packages[i]['pkg_name']}</h5>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                                    `
+                    }
                 }
             });
     </script>
