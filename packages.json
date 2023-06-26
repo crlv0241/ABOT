@@ -124,7 +124,7 @@
         "pkg_name"    : "Goldi Mocha with Pizza Package",
         "price"       :  "2,300" ,
         "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Goldilocks Dedication Mocha Cake (8x12)",
-        "img_path"    :  "/img/pkg/GoldiMochawithPizza.jpg",
+        "img_path"    :  "/img/pkg/GoldiMochaWithPizza.jpg",
         "delivery"    : "motorcycle"
     },
     {
@@ -228,7 +228,7 @@
         "pkg_name"    : "Red Ribbon Choco with Pizza Package",
         "price"       :  "2,300" ,
         "description" :  "5 pcs Balloons, 2 Boxes Large Shakey's Pizza, Red Ribbon Dedication Chocolate Cake 8x10",
-        "img_path"    :  "/img/pkg/RedRibbonChocowithPizzaPackage.jpg",
+        "img_path"    :  "/img/pkg/RedRibbonChocoWithPizzaPackage.jpg",
         "delivery"    : "motorcycle"
     },
     {
@@ -284,7 +284,7 @@
         "pkg_name"    : "Car Setup For Her",
         "price"       :  "6,500" ,
         "description" :  "Balloons, Mix Flowers, Mango Bravo Mini Contis Cake, 2 Large Shakey's Pizza (Hawaiian & Pepperoni), Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
-        "img_path"    : "/img/pkg/carsetupforher.jpg",
+        "img_path"    : "/img/pkg/CarSetUpForHer.jpg",
         "img_car"     : "/img/pkg/carsetupforher2.jpg",
         "delivery"    : "car_setup"
     },
@@ -293,7 +293,7 @@
         "pkg_name"    : "Car Setup Just For Her",
         "price"       :  "7,500" ,
         "description" :  "Balloons, 6 Roses Flowers, Goldilocks Pastel Cake, 3pcs Greenwich Pizza, 8pcs Chicken Joy Jollibee,12 Dunkin Donuts, Happy Birthday Banner, 5pcs 3R Printer pictures for FREE",
-        "img_path"    : "/img/pkg/carsetupjustforher.jpg",
+        "img_path"    : "/img/pkg/CarSetUpJustForher.jpg",
         "img_car"     : "/img/pkg/carsetupjustforher2.jpg",
         "delivery"    : "car_setup"
     },
